@@ -7,7 +7,7 @@ const getUsers = async () => {
         databaseId: process.env.FIRESTORE_ID,
     });
 
-    const usersCollection = fs.collection('user');
+    const usersCollection = fs.collection('users');
 
     let users = [];
     const result = await usersCollection.get();
